@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    
+    <title>app skill test page</title>
+</head>
+<body>
+
+    <h1>App skill test page</h1>
+    <div class="first" id = "autoscl"> 
+    <span id = "related">Related</span>
+    <marquee behavior="scroll" direction="up"><a href="second.html">this guy is amazing </a></marquee>    
+    </div>
+    <div class="first" id = "youtube">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RNXb6BvRyvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+    <div class="first" id = "fom">
+        
+
+
+            
+            <span> do you like this content</span>
+            <br>
+            <input type="radio" name="check" id="yes"  >yes
+            <br>
+            <input type="radio" name="check" id="no" >no
+            <br>
+            <input id="fm" type="submit">
+            <br>
+            
+        
+
+        <span id="feedback" > </span>
+        
+
+        
+         
+    </div>
+    
+
+    <br>
+    <div id = "comments">
+    
+       <span id = " com">
+        comments
+        </span> 
+           
+        <br>
+      <div id="di" class="new"> </div>
+     <div>
+      <textarea name="coment" id="text" cols="180" rows="7"></textarea>
+      </div>
+    
+      <input id="sub" type="submit">
+      </div>
+
+<div id = "footer">
+    <span class="contact" id="contact"> contact info </span>
+  <div class="contact" id = "name"> Prabhat Kumar</div>
+  <div class="contact" id="email"> Anshum.52@gmail.com</div>
+  <div class="contact" id = "phone"> 7303068809</div>
+    
+</div>
+
+<script>
+    
+    var i = 0;
+
+    $("#sub").on("click",function(){
+    
+
+    var val = $("textarea").val();
+
+    $(".new").clone().addClass("hey").appendTo(document.getElementsByClassName("new"));
+        $(".new").last().removeClass("new");
+        $(".hey").text(val);
+        $(".hey").last().removeClass("hey");
+        $("textarea").val(" ");
+
+
+
+        if(i%2 == 0)
+      {
+          $(".new").css("backgroundColor", "white");
+      }
+      else{
+        $(".new").css("backgroundColor", "wheat");
+
+      }
+      
+       i = i + 1;
+     
+      
+      });
+
+
+      $("#fm").on("click",function(){ 
+          
+          if(document.getElementById("yes").checked)
+          {
+               $("#feedback").text("thankyou for liking");
+          }
+          else if(document.getElementById("no").checked)
+          {
+              $("#feedback").text("we will try to improve");
+          }
+          else{
+              $("#feedback").text("please select");
+          }
+
+      });
+
+
+      
+
+</script>
+    
+    
+</body>
+</html>

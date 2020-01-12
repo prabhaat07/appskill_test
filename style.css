@@ -1,0 +1,74 @@
+body{
+  
+
+    background-color: aliceblue;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+
+.first{
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%x;
+
+
+}
+
+#autoscl{
+    margin-left: 6%;
+    background-color: rgba(245, 243, 241, 0.966);
+}
+#related{
+    border: solid 2px  azure;
+    padding-right : 70%;
+    background-color: beige;
+}
+
+#comments{
+    background-color: whitesmoke;
+    margin-top: 22% ;
+    
+}
+textarea{
+    margin-top: 50px;
+}
+#footer{
+    background-color: black;
+    margin-top: 2px;
+}
+.contact{
+    color: white;
+    
+}
+
+#contact{
+    font-weight: bold;
+}
+#di{
+    
+    background-color: wheat;
+    margin-bottom: 10px;
+    
+}
+#youtube{
+    background-color: whitesmoke;
+    
+    
+    padding-left: 20px;
+    padding-right: 30px;
+    
+}
+#fom{
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
